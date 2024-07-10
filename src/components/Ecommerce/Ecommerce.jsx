@@ -98,7 +98,7 @@ export function EcommerceService() {
                                             {itemCart.map((data) => (
                                                 <tr key={data.id}>
                                                     <td>{data.title}</td>
-                                                    <td><img src={data.image} alt="image" style={{ width: '50px', objectFit: 'contain' }} /></td>
+                                                    <td><img src={data.image} alt=" Product image" style={{ width: '50px', objectFit: 'contain' }} /></td>
                                                     <td>${data.price}</td>
                                                 </tr>
                                             ))}
@@ -126,7 +126,7 @@ export function EcommerceService() {
                 <main className="col-9 d-flex flex-wrap">
                     {products.map((item) => (
                         <div key={item.id} className="card m-2 p-2" style={{ width: '18rem' }}>
-                            <img src={item.image} alt="image" className="card-img-top" style={{ height: '200px', objectFit: 'contain' }} />
+                            <img src={item.image} alt=" Product image" className="card-img-top" style={{ height: '200px', objectFit: 'contain' }} />
                             <div className="card-header">
                                 <h5 className="card-title">{item.title}</h5>
                             </div>
