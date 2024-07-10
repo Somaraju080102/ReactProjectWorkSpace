@@ -3,11 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Login } from './components/login/Login';
-import { ProductInfo } from './components/data-binding/databinding';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import { NasaComponent } from './components/nasa-api/nasa';
 import { EcommerceService } from './components/Ecommerce/Ecommerce';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
