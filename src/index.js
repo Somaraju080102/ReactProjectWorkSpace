@@ -5,15 +5,37 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import { EcommerceService } from './components/Ecommerce/Ecommerce';
+// import { EcommerceService } from './components/Ecommerce/Ecommerce';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
+import axios from 'axios';
+// import { StyleBinding } from './components/style-binding/Sbinding';
+// import { ProductInfo } from './components/data-binding/databinding';
+// import { UseState } from './components/UseState/UseState';
+// import { ClassBinding } from './components/class-binding/class-binding';
+// import { ResultApplication } from './components/ResultWebPage/ResultApp';
+// import { MouseDemo } from './components/mouse-demo/mouse-demo';
+// import { KeyDemo } from './components/key-demo/key-demo';
+// import { Clipboard } from './components/clipboard-events/clipboard-event';
+// import { TimeInterval } from './components/time-intervals/time-intervals';
+// import { LoginComponent } from './customised-components/login/Login-Component';
+// import { HomeComponent } from './customised-components/HomeComponent';
+// import { LoginClassComponent } from './ClassComponents/LoginClass';
+// import { PureDemo } from './ClassComponents/PureDemo';
+// import { HomeLoginComponent } from './ClassComponents/ClassProps';
+// import { ConditionalRendering, CondtionRendering } from './ClassComponents/ConditionalRender';
+// import { FormReact } from './components/Forms/FormReact';
+// import { FormikDemo } from './components/Formik/FormikDemo';
+// import { YupDemo } from './components/YupDemo/YupDemo';
+// import { RouterDemo } from './components/RouterDemo/RouterDemo';
+import { UserRegistration } from './CNMP/UserManagment/UserRegistration/UserRegistration';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <EcommerceService></EcommerceService>
+  <UserRegistration  />
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
