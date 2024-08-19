@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Ecommerce.css";
+import axios from "axios";
 
 export function EcommerceService() {
     const [categories, setCategories] = useState([]);
@@ -8,12 +9,22 @@ export function EcommerceService() {
     const [itemCart, setItemCart] = useState([]);
 
     function LoadCategories() {
-        fetch("https://fakestoreapi.com/products/categories")
-            .then(response => response.json())
-            .then(data => {
-                data.unshift("ALL");
-                setCategories(data);
-            });
+
+
+    axios.get("https://fakestoreapi.com/products/categories")
+    .then(response=>{
+        setCategories(response.data);
+    })
+    .catch(eror=>{
+        console.log(eror);
+    })
+    
+        // fetch("https://fakestoreapi.com/products/categories")
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         data.unshift("ALL");
+        //         setCategories(data);
+        //     });
     }
 
     function LoadProducts(url) {

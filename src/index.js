@@ -26,14 +26,19 @@ import axios from 'axios';
 // import { FormReact } from './components/Forms/FormReact';
 // import { FormikDemo } from './components/Formik/FormikDemo';
 // import { YupDemo } from './components/YupDemo/YupDemo';
-// import { RouterDemo } from './components/RouterDemo/RouterDemo';
+import { RouterDemo } from './components/RouterDemo/RouterDemo';
 import { UserRegistration } from './CNMP/UserManagment/UserRegistration/UserRegistration';
+// import { RouterDemo } from './components/RouterDemo/RouterDemo';
+import { ShoppingHome } from './components/shopping-router/Shopping-home';
+import { ShoppingProducts } from './components/shopping-router/Shooping-products';
+import { AppCnmp } from './CNMP/App/App';
+import { MuiDemo } from './components/MUI-Demo/MUI';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <UserRegistration  />
+  <AppCnmp  />
 );
 
 

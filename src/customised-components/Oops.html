@@ -1,0 +1,46 @@
+<script>
+
+class Employee{
+    Name;
+    Designation;
+    Role;
+
+    print(){
+        console.log(this.Name+" "+this.Designation+" "+this.Role);
+    }
+};
+
+class Developer extends Employee{
+    Name="Somaraju";
+    Designation="Senior Developer";
+    Role="Full Stack Developer";
+
+    print(){
+        super.print();
+    }   
+};
+class Admin extends Employee{
+    Name="Suresh";
+    Designation="Senior Admin";
+    Role="System Administrator";
+    
+    print(){
+        super.print();
+    }
+}
+class Manager extends Employee{
+    Name="Mahesh";
+    Designation="Manager";
+    Role="Project Manager";
+    
+    print(){
+        super.print();
+    }
+    
+};
+
+var  obj=new Developer();
+
+
+
+</script>
